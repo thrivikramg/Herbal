@@ -1,0 +1,81 @@
+.header {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem; 
+  background: var(--green);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 2rem; 
+  color: white; 
+  text-decoration: underline; 
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end; 
+}
+
+/* Navbar list styling */
+.navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 0.5rem; 
+}
+
+/* Navbar list item styling */
+.navbar ul li {
+  margin: 0; 
+}
+
+/* Navbar links styling */
+.navbar ul li a {
+  font-size: 25px; /* Updated font size */
+  color: var(--white); /* Ensure link color is white */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
+  padding: 0.5rem 1rem; /* Padding for better click area */
+  border-radius: 0.25rem; /* Rounded corners for better look */
+}
+
+/* Navbar link hover styling */
+.navbar ul li a:hover {
+  color: greenyellow; /* Light green color on hover */
+  background-color: var(--white); /* White background on hover */
+}
+
+/* Menu icon styling */
+.fa-bars {
+  display: none; /* Hide menu icon by default */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide navbar on mobile by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: flex; /* Display toggle button */
+  }
+
+  .fa-bars {
+    display: block; /* Show menu icon */
+  }
+}

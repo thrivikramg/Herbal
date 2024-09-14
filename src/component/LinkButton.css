@@ -1,0 +1,19 @@
+.link-button {
+    display: inline-block; /* Makes the button fit the text */
+    background-color: #1fa155; /* Light green background color */
+    color: #333; /* Text color */
+    font-size: 1rem; /* Font size */
+    padding: 0.5rem 1rem; /* Padding for vertical and horizontal spacing */
+    text-align: center; /* Center the text inside the button */
+    border-radius: 0.5rem; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a 3D effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for the link-button */
+.link-button:hover {
+    background-color: #47da4a; /* Slightly darker green on hover */
+    color: #000; /* Darker text color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
